@@ -33,7 +33,7 @@ st.write(f"R-squared: {r2_score(y_test, y_pred):.2f}")
 fig, axs = plt.subplots(1, 2, figsize=(14, 6))
 
 # True vs Predicted
-axs[0].scatter(y_test, y_pred, color='lavender', alpha=0.5)
+axs[0].scatter(y_test, y_pred, color='teal', alpha=0.5)
 axs[0].plot(
     [y_test.min(), y_test.max()],
     [y_test.min(), y_test.max()],
