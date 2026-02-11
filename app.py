@@ -33,7 +33,7 @@ st.write(f"R-squared: {r2_score(y_test, y_pred):.2f}")
 fig, axs = plt.subplots(1, 2, figsize=(14, 6))
 
 # True vs Predicted
-axs[0].scatter(y_test, y_pred, color='blue', alpha=0.5)
+axs[0].scatter(y_test, y_pred, color='softpuprle', alpha=0.5)
 axs[0].plot(
     [y_test.min(), y_test.max()],
     [y_test.min(), y_test.max()],
@@ -45,7 +45,7 @@ axs[0].set_xlabel("True Values")
 axs[0].set_ylabel("Predicted Values")
 
 # BMI feature (column index 2)
-axs[1].scatter(X_test[:, 2], y_pred, color='green', alpha=0.7)
+axs[1].scatter(X_test[:, 2], y_pred, color='coral', alpha=0.7)
 axs[1].set_title("Feature (BMI) vs Predicted Values")
 axs[1].set_xlabel("BMI Feature")
 axs[1].set_ylabel("Predicted Values")
